@@ -6,26 +6,26 @@ public class TankShooting : MonoBehaviour {
 
 	public GameObject shotPrefab;
 	public Transform barrelTransform;
+	public GameObject shot;
 
-	private float fireRate = 0.5F;
-	private float nextFire = 0.0F;
+	private float fireRate = .4f;
+	private float nextFire = .0f;
 
 	void Update () {
 		float fireButton = Input.GetAxisRaw("Fire1");
 
-		if (fireButton > 0 && NextTimeToShoot()) {
+		if (fireButton > 0 && CanShoot()) {
 			nextFire = Time.time + fireRate;
 
 			CreateShoot();
 		}
 	}
 
-	bool NextTimeToShoot() {
-		return Time.time > nextFire;
+	bool CanShoot() {
+		return Time.time > nextFire && shot == null;
 	}
 
 	void CreateShoot() {
-		Instantiate (shotPrefab, barrelTransform.position + barrelTransform.up * .1f, barrelTransform.rotation);
+		shot = Instantiate (shotPrefab, barrelTransform.position + barrelTransform.up * .1f, barrelTransform.rotation) as GameObject;
 	}
-
 }

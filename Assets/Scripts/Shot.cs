@@ -4,10 +4,8 @@ using UnityEngine;
 
 public class Shot : MonoBehaviour {
 
-	public GameObject explosionPrefab;
-
 	private Rigidbody2D rigidBody;
-	private float shotLifeTime = 3f;
+	private float shotLifeTime = 1.5f;
 	private float shotSpeed = 10f;
 
 	void Awake () {
@@ -21,7 +19,7 @@ public class Shot : MonoBehaviour {
 	}
 
 	void OnCollisionEnter2D(Collision2D other) {
-		Instantiate (explosionPrefab, transform.position, Quaternion.identity);
+		other.gameObject.GetComponent<IShotable>().Hit(transform);
 
 		Destroy(gameObject);
 	}

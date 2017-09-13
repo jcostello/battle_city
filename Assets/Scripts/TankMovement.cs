@@ -9,17 +9,11 @@ public class TankMovement : MonoBehaviour {
 	private Rigidbody2D rigidBody;
 	private float speed = 5f;
 
-
 	void Awake() {
 		tankAnimator = GetComponent<Animator>();
 		rigidBody = GetComponent<Rigidbody2D>();
 	}
 
-	void Start () {
-
-	}
-
-	// Update is called once per frame
 	void Update () {
 		Move();
 		Rotate();

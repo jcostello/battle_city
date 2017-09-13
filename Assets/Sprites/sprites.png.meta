@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 7cb0a95f5ada44d25ad6a62187e816c2
-timeCreated: 1505218275
+timeCreated: 1505241194
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -20,7 +20,7 @@ TextureImporter:
     21300026: sprites_13
     21300028: sprites_14
     21300030: sprites_15
-    21300032: sprites_16
+    21300032: WallPart1
     21300034: sprites_17
     21300036: sprites_18
     21300038: sprites_19
@@ -270,6 +270,7 @@ TextureImporter:
     21300526: sprites_263
     21300528: sprites_264
     21300530: shot
+    21300532: WallPart2
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -307,12 +308,12 @@ TextureImporter:
   lightmap: 0
   compressionQuality: 50
   spriteMode: 2
-  spriteExtrude: 5
+  spriteExtrude: 0
   spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spritePixelsToUnits: 15
+  spritePixelsToUnits: 15.5
   alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
@@ -609,20 +610,6 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 16, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: sprites_16
-      rect:
-        serializedVersion: 2
-        x: 320
-        y: 248
-        width: 16
-        height: 8
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -4106,6 +4093,34 @@ TextureImporter:
         y: 150
         width: 3
         height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WallPart1
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 248
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WallPart2
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 248
+        width: 8
+        height: 8
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
